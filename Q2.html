@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+<div>
+	<h1>Register Here!</h1>	
+</div>
+<div>
+	<form>
+		Username:<span style="color: red !important; display: inline; float: none;">*</span><input type="text" placeholder="Username" pattern="[a-z]{8,12}[A-Z]" required><br><br>
+
+		Password:<span style="color: red !important; display: inline; float: none;">*</span><input type="password"  placeholder="Password" 
+		pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}" required><br><br>
+
+		Name:<span style="color: red !important; display: inline; float: none;">*</span><input type="text" placeholder="Name" required pattern="[a-z][A-Z]" maxlength="25"><br><br>
+
+		Address:<input type="text" placeholder="Address"><br><br>
+		<label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>      
+        
+            <select id="country" name="country" class="form-control">
+                <option value="Afghanistan">Afghanistan</option>
+                
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Russian Federation">Russian Federation</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option><br><br>
+            Pin Code:<span style="color: red !important; display: inline; float: none;">*</span><input type="number" placeholder="Pin" maxlength="6" required><br><br>
+            Sex:<span style="color: red !important; display: inline; float: none;">*</span>&nbsp<input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>&nbsp<input type="radio" id="female" name="gender" value="female"><label for="male">Female</label><br><br>
+            Language:&nbsp<input type="checkbox" id="lang" name="language" value="hindi"><label for="hindi">Hindi</label>&nbsp<input type="checkbox" id="lang" name="language" value="English"><label for="english">English</label><br><br>
+            Other Details:&nbsp<input type="text" name="" value="" placeholder=""><br><br>
+            <input type="submit" name="submit" value="submit">
+
+
+	</div>
+</body>
+</html>
+--------------------------------------------------------------------------------------------
+
+
